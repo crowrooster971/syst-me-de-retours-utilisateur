@@ -12,7 +12,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to MongoDB
 const mongoURI = process.env.MONGO_URI || 'mongodb://localhost/user-feedback-system';
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log('MongoDB connected'))
+    .catch(err => console.error('MongoDB connection error:', err));
 
 // Routes
 app.use('/api/feedback', feedbackRouter);
