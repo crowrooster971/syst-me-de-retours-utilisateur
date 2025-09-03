@@ -1,5 +1,5 @@
 {
-  "name": "système-de-retours-utilisateur",
+  "name": "systeme-de-retours-utilisateur",
   "version": "1.0.0",
   "description": "Plateforme pour recueillir les retours des utilisateurs.",
   "main": "index.js",
