@@ -14,9 +14,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Routes
 app.get('/', (req, res) => {
-    res.send('Bienvenue dans le Système de Retours Utilisateur !');
+    res.send('Welcome to the User Feedback System!');
 });
 
 app.listen(PORT, () => {
-    console.log(`Serveur en cours d'exécution sur le port ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
