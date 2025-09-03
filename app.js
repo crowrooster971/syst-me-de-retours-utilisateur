@@ -11,11 +11,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/système-de-retours-utilisateur', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/user-feedback-system', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Routes
 app.use('/api/feedback', feedbackRouter);
 
 app.listen(PORT, () => {
-    console.log(`Serveur en cours d\'exécution sur le port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
