@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Routes
 app.get('/', (req, res) => {
-    res.send('Bienvenue sur le Système de Retours Utilisateur !');
+    res.send('Bienvenue dans le Système de Retours Utilisateur !');
 });
 
 app.listen(PORT, () => {
