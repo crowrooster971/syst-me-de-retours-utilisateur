@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/système-de-retours-utilisateur', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/système_de_retours_utilisateur', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Middleware
 app.use(bodyParser.json());
