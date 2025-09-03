@@ -1,0 +1,19 @@
+{
+  "name": "système-de-retours-utilisateur",
+  "version": "1.0.0",
+  "description": "Plateforme pour recueillir les retours des utilisateurs.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "mongoose": "^5.10.9"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "Votre Nom",
+  "license": "MIT"
+}
